@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarath & Anupama | Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <main class="app">
+    <!-- COVER -->
+    <section class="cover-screen" id="coverScreen">
+      <div class="cover-topline"><span>THE WEDDING OF</span><span>14 · 12 · 2026</span></div>
+      <div class="cover-stage">
+        <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+        <div class="sparkle sparkle-three">✦</div><div class="sparkle sparkle-four">✧</div>
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-letter">
+            <div class="mini-frame">
+              <img src="couple.png" alt="Sarath and Anupama together">
+            </div>
+            <p class="letter-kicker">TOGETHER WITH THEIR FAMILIES</p>
+            <h1>Sarath <i>&amp;</i> Anupama</h1>
+            <div class="letter-rule"><span>✦</span></div>
+            <p class="letter-date">MONDAY, 14 DECEMBER 2026</p>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">S<span>✦</span>A</div>
+        </div>
+      </div>
+      <div class="cover-copy">
+        <button class="cover-music-button" id="coverMusicButton" type="button">♫ <span>Tap to Play</span></button>
+        <div class="heart-burst" id="heartBurst" aria-hidden="true"></div>
+        <p class="script-line">A beautiful beginning</p>
+        <h2>You Are Invited</h2>
+        <p class="cover-description">With joyful hearts, we invite you to share in the celebration of our wedding.</p>
+        <button class="open-button" id="openButton"><span>Open Invitation</span><b>↗</b></button>
+        <p class="hint"><span class="hint-dot"></span> TAP TO UNFOLD OUR STORY</p>
+      </div>
+      <div class="cover-bottom"><span>WITH LOVE</span><span class="bottom-flower">❦</span><span>AND BLESSINGS</span></div>
+    </section>
+
+    <!-- OPENED INVITATION -->
+    <section class="invitation-screen" id="invitationScreen" hidden>
+      <nav class="inside-nav">
+        <a href="#" id="backToCover" class="nav-monogram">S<span>✦</span>A</a>
+        <span>THE WEDDING INVITATION</span>
+        <button class="music-button" id="musicButton" type="button">♫ <span>Tap to Play</span></button>
+        <button id="closeButton" aria-label="Return to cover">✕</button>
+      </nav>
+
+      <section class="scratch-section" id="scratchSection">
+        <p class="eyebrow">A LITTLE SURPRISE</p>
+        <h2>Scratch to <i>Reveal</i></h2>
+        <p class="scratch-instruction">A little surprise is waiting just beneath the surface</p>
+        <div class="scratch-card" id="scratchCard">
+          <div class="scratch-under"><span>OUR WEDDING DAY</span><strong>14 · 12 · 2026</strong><small>MONDAY · DECEMBER</small></div>
+          <canvas id="scratchCanvas" aria-label="Scratch to reveal wedding date"></canvas>
+        </div>
+        <p class="scratch-status" id="scratchStatus">Use your finger or mouse to gently scratch the card ♥</p>
+      </section>
+
+      <section class="opened-hero">
+        <div class="opened-copy">
+          <p class="eyebrow">WITH THE BLESSINGS OF OUR FAMILIES</p>
+          <h1>Sarath <i>&amp;</i><br>Anupama</h1>
+          <p class="opened-subtitle">Together with love, we invite you to celebrate the beginning of our forever.</p>
+          <div class="date-pill"><span>✦</span> 14 DECEMBER 2026 <span>✦</span></div>
+          <div class="countdown-panel" id="countdownPanel" aria-label="Countdown to the wedding">
+            <p class="eyebrow">COUNTING DOWN TO OUR BIG DAY</p>
+            <div class="countdown-grid">
+              <div><strong id="countDays">--</strong><span>DAYS</span></div>
+              <div><strong id="countHours">--</strong><span>HOURS</span></div>
+              <div><strong id="countMinutes">--</strong><span>MINUTES</span></div>
+              <div><strong id="countSeconds">--</strong><span>SECONDS</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-halo"></div>
+          <div class="portrait">
+            <img src="couple.png" alt="Sarath and Anupama together in traditional attire">
+          </div>
+          <div class="portrait-stamp">A DAY TO<br>REMEMBER</div>
+        </div>
+      </section>
+
+     
+<section class="meet-section" id="meetCouple">
+  <p class="eyebrow">THE TWO OF US</p>
+  <h2>Meet the <i>Couple</i></h2>
+
+  <div class="meet-pair" id="meetPair">
+
+    <!-- BRIDE -->
+    <figure class="meet-person bride-person">
+      <img src="bride.png" alt="Anupama - The Bride" class="person-photo">
+      <figcaption>Anupama</figcaption>
+      <small>THE BRIDE</small>
+      <p class="parent-names">
+        Beloved daughter of<br>
+        <strong>Mr. N. Rajasekharan</strong><br>
+        &amp; <strong>Mrs. G. Sobhana Kumari</strong>
+      </p>
+    </figure>
+
+    <button class="join-heart" id="joinHeart"
+      aria-label="Bring the couple together">
+      ♥<span>Press to unite</span>
+    </button>
+
+    <!-- GROOM -->
+    <figure class="meet-person groom-person">
+      <img src="groom.png" alt="Sarath - The Groom" class="person-photo">
+      <figcaption>Sarath</figcaption>
+      <small>THE GROOM</small>
+      <p class="parent-names">
+        Beloved son of<br>
+        <strong>Mr. K. Sadhasivan Nair</strong><br>
+        &amp; <strong>Mrs. S. Thankam</strong>
+      </p>
+    </figure>
+
+  </div>
+
+  <div class="joined-couple" id="joinedCouple">
+    <img src="couple1.png" alt="Sarath and Anupama together">
+    <p>Two hearts, one beautiful forever. ♥</p>
+    <button id="separateAgain">View them separately</button>
+  </div>
+</section>
+
+
+      <div class="scroll-note"><span></span> THE CELEBRATION <span></span></div>
+
+      <section class="event-section">
+        <div class="section-heading"><p class="eyebrow">A DAY TO CHERISH</p><h2>The <i>Wedding Day</i></h2><p>With the love of our families, we invite you to witness the beginning of our forever.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><time>10:00 AM onwards</time><div><h3>Sweekaranam</h3><p>Guests are warmly welcomed at Ponmahal Auditorium.</p></div></article>
+          <article class="timeline-item"><time>12:00 noon – 12:45 AM</time><div><h3>Thali Kettu</h3><p>The sacred tying of the thali — the moment our forever begins.</p></div></article>
+          <article class="timeline-item"><time>Following the ceremony</time><div><h3>Blessings &amp; Photography</h3><p>Elders and loved ones bless the newlyweds and share the joy of the day.</p></div></article>
+          <article class="timeline-item"><time>Following the ceremony</time><div><h3>Sadya</h3><p>A traditional Kerala Sadya, served with love on a banana leaf.</p></div></article>
+        </div>
+        <article class="venue-card"><p class="eyebrow">THE WEDDING VENUE</p><h3>Sree Lekshmi Kalyana Mandapam</h3><p>We look forward to welcoming you to the celebration.</p><div class="venue-actions"><a class="map-button" href="https://maps.app.goo.gl/yc9WejYmGQPwwaCs5" target="_blank" rel="noopener">VIEW LOCATION ↗</a><a class="map-button secondary-map" href="https://www.google.com/maps/dir/?api=1&destination=https%3A%2F%2Fmaps.app.goo.gl%2Fyc9WejYmGQPwwaCs5" target="_blank" rel="noopener">GET DIRECTIONS ↗</a></div></article>
+      </section>
+
+      <section class="reception-section">
+        <p class="eyebrow">THE CELEBRATION CONTINUES</p><h2>An Evening of <i>Joy</i></h2>
+        <p class="reception-invite">As the day turns to evening, we would be delighted by your presence at our wedding reception. Please join us and grace the occasion with your blessings.</p>
+        <article class="venue-card reception-venue"><p class="eyebrow">WEDDING RECEPTION</p><h3>14 December 2026</h3><p>We warmly invite you and your family to celebrate with us.</p><div class="venue-actions"><a class="map-button" href="https://maps.app.goo.gl/ZZLygF3EuuP7KSCd6" target="_blank" rel="noopener">VIEW LOCATION ↗</a><a class="map-button secondary-map" href="https://www.google.com/maps/dir/?api=1&destination=https%3A%2F%2Fmaps.app.goo.gl%2FZZLygF3EuuP7KSCd6" target="_blank" rel="noopener">GET DIRECTIONS ↗</a></div></article>
+      </section>
+
+      <section class="note-section"><p class="eyebrow">A NOTE FROM US</p><h2>With Your <i>Blessings</i></h2><h3>Your presence means more than any gift</h3><p>We would be honoured to have you and your family with us as we begin this beautiful new chapter.</p><p class="malayalam-note">ഞങ്ങളുടെ ഈ യാത്രയിൽ നിങ്ങളുടെ സ്നേഹവും അനുഗ്രഹവും ഞങ്ങൾക്ക് വളരെ വിലപ്പെട്ടതാണ്.</p><p class="note-signoff">With love,<br><strong>Sarath &amp; Anupama</strong></p><a class="download-card-button" href="invitation-card.png" download="Sarath_Anupama_Wedding_Invitation.png">↓ DOWNLOAD INVITATION CARD</a></section>
+
+      <section class="finale">
+        <div class="finale-border">
+          <div class="finale-flower">❦</div>
+          <p class="eyebrow">UNTIL WE MEET</p>
+          <h2>Your Presence<br><i>is Our Gift</i></h2>
+          <p class="gift-quote">“No expensive gift can match the warmth of your blessings and the joy of your presence.”</p>
+          <p class="malayalam-note">നിങ്ങളുടെ സാന്നിധ്യമാണ് ഞങ്ങൾക്ക് ഏറ്റവും വിലപ്പെട്ട സമ്മാനം</p>
+          <div class="finale-names">Sarath <i>&amp;</i> Anupama</div>
+          <div class="finale-date">14 · 12 · 2026</div>
+          <a class="calendar-button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20of%20Sarath%20%26%20Anupama&dates=20261214/20261215&details=Wedding%20celebration%20of%20Sarath%20%26%20Anupama&location=Ponmahal%20Auditorium" target="_blank" rel="noopener">＋ ADD WEDDING TO CALENDAR</a>
+          <button class="print-button" onclick="window.print()">PRINT / SAVE WEBSITE</button>
+          <button class="back-button" id="returnButton">← BACK TO COVER</button>
+        </div>
+      </section>
+      <footer><span>MADE WITH LOVE</span><b>♥</b><span>SARATH &amp; ANUPAMA · 14 · 12 · 2026 · FOREVER BEGINS</span></footer>
+    </section>
+  </main>
+
+  <script>
+    const coverScreen = document.getElementById("coverScreen");
+    const invitationScreen = document.getElementById("invitationScreen");
+    const envelope = document.getElementById("envelope");
+
+    function openInvitation() {
+      envelope.classList.add("is-opening");
+      coverScreen.classList.add("cover-fade");
+      window.setTimeout(() => {
+        coverScreen.hidden = true;
+        invitationScreen.hidden = false;
+        window.scrollTo(0, 0);
+        requestAnimationFrame(() => paintScratch());
+      }, 850);
+    }
+    function showCover(event) {
+      if (event) event.preventDefault();
+      invitationScreen.hidden = true;
+      coverScreen.hidden = false;
+      envelope.classList.remove("is-opening");
+      coverScreen.classList.remove("cover-fade");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    document.getElementById("openButton").addEventListener("click", openInvitation);
+    document.getElementById("backToCover").addEventListener("click", showCover);
+    document.getElementById("closeButton").addEventListener("click", showCover);
+    document.getElementById("returnButton").addEventListener("click", showCover);
+
+    // Background music: add your chosen audio file as song.mp3 beside index.html.
+    const weddingMusic = new Audio("song.mp3");
+    weddingMusic.loop = true;
+    const musicButton = document.getElementById("musicButton");
+    const coverMusicButton = document.getElementById("coverMusicButton");
+    const heartBurst = document.getElementById("heartBurst");
+    function burstHearts() {
+      for (let i = 0; i < 13; i++) {
+        const heart = document.createElement("span");
+        heart.className = "floating-heart";
+        heart.textContent = "♥";
+        heart.style.setProperty("--drift", `${(Math.random() - .5) * 180}px`);
+        heart.style.setProperty("--delay", `${Math.random() * .35}s`);
+        heartBurst.appendChild(heart);
+        setTimeout(() => heart.remove(), 2200);
+      }
+    }
+    async function toggleMusic() {
+      if (weddingMusic.paused) {
+        try {
+          await weddingMusic.play();
+          musicButton.innerHTML = "♫ <span>Pause Music</span>";
+          coverMusicButton.innerHTML = "♫ <span>Pause Music</span>";
+          burstHearts();
+        } catch {
+          musicButton.innerHTML = "♫ <span>Add song.mp3</span>";
+          coverMusicButton.innerHTML = "♫ <span>Add song.mp3</span>";
+        }
+      } else {
+        weddingMusic.pause();
+        musicButton.innerHTML = "♫ <span>Tap to Play</span>";
+        coverMusicButton.innerHTML = "♫ <span>Tap to Play</span>";
+      }
+    }
+    musicButton.addEventListener("click", toggleMusic);
+    coverMusicButton.addEventListener("click", toggleMusic);
+
+    // Scratch card: the wedding date appears only after the card is scratched.
+    const scratchCanvas = document.getElementById("scratchCanvas");
+    const scratchCtx = scratchCanvas.getContext("2d", { willReadFrequently: true });
+    let scratched = false, scratching = false, scratchPercent = 0;
+    function paintScratch() {
+      const box = scratchCanvas.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      scratchCanvas.width = Math.max(1, Math.round(box.width * dpr));
+      scratchCanvas.height = Math.max(1, Math.round(box.height * dpr));
+      scratchCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const g = scratchCtx.createLinearGradient(0, 0, box.width, box.height);
+      g.addColorStop(0, "#17472f"); g.addColorStop(.5, "#2d6546"); g.addColorStop(1, "#123a27");
+      scratchCtx.globalCompositeOperation = "source-over";
+      scratchCtx.fillStyle = g; scratchCtx.fillRect(0, 0, box.width, box.height);
+      scratchCtx.strokeStyle = "rgba(218,190,126,.65)"; scratchCtx.lineWidth = 1;
+      scratchCtx.strokeRect(9, 9, box.width - 18, box.height - 18);
+      scratchCtx.fillStyle = "rgba(232,211,164,.22)";
+      for (let x = 18; x < box.width; x += 22) for (let y = 18; y < box.height; y += 22) { scratchCtx.beginPath(); scratchCtx.arc(x, y, 1, 0, Math.PI*2); scratchCtx.fill(); }
+      scratchCtx.fillStyle = "#f1dfb2"; scratchCtx.textAlign = "center";
+      scratchCtx.font = "italic 25px Georgia"; scratchCtx.fillText("Scratch to Reveal", box.width/2, box.height/2 - 2);
+      scratchCtx.font = "10px Arial"; scratchCtx.letterSpacing = "3px"; scratchCtx.fillText("S  ·  A", box.width/2, box.height/2 + 25);
+      scratchCtx.globalCompositeOperation = "destination-out";
+    }
+    function scratchAt(e) {
+      if (!scratching || scratched) return;
+      const r = scratchCanvas.getBoundingClientRect();
+      const x = e.clientX - r.left, y = e.clientY - r.top;
+      scratchCtx.globalCompositeOperation = "destination-out";
+      scratchCtx.beginPath(); scratchCtx.arc(x, y, 25, 0, Math.PI * 2); scratchCtx.fill();
+      const data = scratchCtx.getImageData(0, 0, scratchCanvas.width, scratchCanvas.height).data;
+      let clear = 0;
+      for (let i = 3; i < data.length; i += 4) if (data[i] < 100) clear++;
+      scratchPercent = clear / (data.length / 4);
+      if (scratchPercent > .42) {
+        scratched = true; scratchCanvas.classList.add("scratch-done");
+        document.getElementById("scratchStatus").textContent = "14 · 12 · 2026 — We can't wait to celebrate with you! ♥";
+      }
+    }
+    scratchCanvas.addEventListener("pointerdown", e => { if (scratched) return; e.preventDefault(); scratching = true; scratchCanvas.setPointerCapture(e.pointerId); scratchAt(e); });
+    scratchCanvas.addEventListener("pointermove", e => { if (scratching) { e.preventDefault(); scratchAt(e); } });
+    ["pointerup", "pointercancel", "lostpointercapture"].forEach(type => scratchCanvas.addEventListener(type, () => scratching = false));
+    window.addEventListener("resize", () => { if (!scratched) paintScratch(); });
+    paintScratch();
+
+    // Couple heart interaction
+    const meetPair=document.getElementById("meetPair"), joined=document.getElementById("joinedCouple");
+    document.getElementById("joinHeart").addEventListener("click",()=>{
+      meetPair.classList.add("joined"); joined.classList.add("show");
+    });
+    document.getElementById("separateAgain").addEventListener("click",()=>{
+      meetPair.classList.remove("joined"); joined.classList.remove("show");
+    });
+
+    // Wedding day countdown: 14 December 2026, 12:00 AM India time.
+    function updateCountdown() {
+      const target = new Date("2026-12-14T00:00:00+05:30").getTime();
+      const now = Date.now();
+      let remaining = Math.max(0, target - now);
+      const day = 86400000, hour = 3600000, minute = 60000;
+      const days = Math.floor(remaining / day); remaining %= day;
+      const hours = Math.floor(remaining / hour); remaining %= hour;
+      const minutes = Math.floor(remaining / minute); remaining %= minute;
+      const seconds = Math.floor(remaining / 1000);
+      document.getElementById("countDays").textContent = String(days).padStart(2, "0");
+      document.getElementById("countHours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("countMinutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("countSeconds").textContent = String(seconds).padStart(2, "0");
+    }
+    updateCountdown();
+    window.setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
